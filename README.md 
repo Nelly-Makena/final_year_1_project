@@ -1,0 +1,84 @@
+ 📝 C Task Manager Project
+
+A simple command-line task manager program in C developed collaboratively for our school syllabus project.
+
+
+
+📂 Project Structure
+
+main.c — contains the main menu and function calls.
+Each function will be implemented in this file by different team members via separate branches.
+
+
+
+👥 Team Members & Responsibilities
+
+| Member Name | Feature(s) | Branch Name |
+|:------------|:----------------|:---------------|
+| [Nelly Makena ] | Project setup, main menu, merging PRs | main.C |
+| [Mark] | add_task() | feature/add-task |
+| [Scott] | list_tasks() | feature/list-task |
+| [Kerry Erastus] | mark_done(), delete_task() | feature/mark-delete-task |
+
+
+
+🛠️ How to Contribute
+
+1. Clone the repo
+   bash
+   git clone <repo-link>
+   cd <project-folder>
+
+
+2.Create your branch
+
+bash
+Copy
+Edit
+git checkout -b feature/your-feature-name
+
+
+3.Work on your assigned function
+
+4.Add, commit and push
+
+bash
+Copy
+Edit
+git add main.c
+git commit -m "Implemented <your-function-name>()"
+git push origin feature/your-feature-name
+
+
+5.Create a Pull Request (PR) to main
+
+6.Leader reviews and merges the PR
+
+
+📌 Notes
+Do not modify other members' functions or the main menu
+
+Always pull the latest changes before starting new work:
+
+bash
+Copy
+Edit
+git pull origin main
+
+
+
+
+📈 Progress Tracker
+ Project setup
+
+ Add Task Function
+
+ List Tasks Function
+
+ Mark Task as Done Function
+
+ Delete Task Function
+
+ Final testing and cleanup
+
+
