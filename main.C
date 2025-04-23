@@ -32,7 +32,17 @@ int main() {
 }
 
 void add_task() {
-    // To be implemented by Mark
+    if (task_count >= MAX_TASKS) {
+        printf("Task list is full!\n");
+        return;
+    }
+    printf("Enter task description: ");
+    getchar();
+    fgets(tasks[task_count].description, MAX_LENGTH, stdin);
+    tasks[task_count].description[strcspn(tasks[task_count].description, "\n")] = 0; // Remove newline
+    tasks[task_count].completed = 0;
+    task_count++;
+    printf("Task added successfully!\n");
 }
 
 void list_tasks() {
