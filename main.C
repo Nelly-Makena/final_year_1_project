@@ -50,13 +50,6 @@ void list_tasks() {
 }
 
 void mark_done() {
-    // To be implemented by Erastus
-}
-
-void delete_task() {
-    // To be implemented by Erastus
-}
-void mark_done() {
     int index;
     printf("Enter task number to mark as done: ");
     scanf("%d", &index);
