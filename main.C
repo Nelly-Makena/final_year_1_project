@@ -56,3 +56,28 @@ void mark_done() {
 void delete_task() {
     // To be implemented by Erastus
 }
+void mark_done() {
+    int index;
+    printf("Enter task number to mark as done: ");
+    scanf("%d", &index);
+    if (index < 1 || index > task_count) {
+        printf("Invalid task number!\n");
+        return;
+    }
+    tasks[index - 1].completed = 1;
+    printf("Task marked as done!\n");
+}
+void delete_task() {
+    int index;
+    printf("Enter task number to delete: ");
+    scanf("%d", &index);
+    if (index < 1 || index > task_count) {
+        printf("Invalid task number!\n");
+        return;
+    }
+    for (int i = index - 1; i < task_count - 1; i++) {
+        tasks[i] = tasks[i + 1];
+    }
+    task_count--;
+    printf("Task deleted successfully!\n");
+}
