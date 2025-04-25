@@ -46,8 +46,15 @@ void add_task() {
 }
 
 void list_tasks() {
-    // To be implemented by Scott 
-}
+    if (task_count == 0) {
+        printf("No tasks available.\n");
+        return;
+    }
+    printf("\nTask List:\n");
+    for (int i = 0; i < task_count; i++) {
+        printf("%d. [%c] %s\n", i + 1, tasks[i].completed ? 'X' : ' ', tasks[i].description);
+    }
+
 
 void mark_done() {
     int index;
